@@ -1,0 +1,69 @@
+Looking for a CUDA compiler failed with the following output:
+-- The CUDA compiler identification is unknown
+CMake Error at CMakeLists.txt:2 (project):
+  No CMAKE_CUDA_COMPILER could be found.
+
+  Tell CMake where to find the compiler by setting either the environment
+  variable "CUDACXX" or the CMake cache entry CMAKE_CUDA_COMPILER to the full
+  path to the compiler, or to the compiler name if it is in the PATH.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CheckCUDA/CMakeFiles/CMakeOutput.log".
+See also "/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CheckCUDA/CMakeFiles/CMakeError.log".
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f741e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f741e.dir/build.make CMakeFiles/cmTC_f741e.dir/build
+make[1]: Entering directory '/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f741e.dir/CheckSymbolExists.c.o
+/home/ankit/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ankit/anaconda3/include    -o CMakeFiles/cmTC_f741e.dir/CheckSymbolExists.c.o   -c "/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_f741e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f741e.dir/link.txt --verbose=1
+/home/ankit/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ankit/anaconda3/include   -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/ankit/anaconda3/lib -Wl,-rpath-link,/home/ankit/anaconda3/lib -L/home/ankit/anaconda3/lib  CMakeFiles/cmTC_f741e.dir/CheckSymbolExists.c.o  -o cmTC_f741e 
+/home/ankit/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: CMakeFiles/cmTC_f741e.dir/CheckSymbolExists.c.o: in function `main':
+CheckSymbolExists.c:(.text.startup.main+0x3): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f741e.dir/build.make:97: recipe for target 'cmTC_f741e' failed
+make[1]: *** [cmTC_f741e] Error 1
+make[1]: Leaving directory '/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f741e/fast' failed
+make: *** [cmTC_f741e/fast] Error 2
+
+File /home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ef61a/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ef61a.dir/build.make CMakeFiles/cmTC_ef61a.dir/build
+make[1]: Entering directory '/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef61a.dir/CheckFunctionExists.c.o
+/home/ankit/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc   -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ankit/anaconda3/include -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_ef61a.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_ef61a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef61a.dir/link.txt --verbose=1
+/home/ankit/anaconda3/bin/x86_64-conda_cos6-linux-gnu-cc -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/ankit/anaconda3/include -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,-rpath,/home/ankit/anaconda3/lib -Wl,-rpath-link,/home/ankit/anaconda3/lib -L/home/ankit/anaconda3/lib  CMakeFiles/cmTC_ef61a.dir/CheckFunctionExists.c.o  -o cmTC_ef61a -lpthreads 
+/home/ankit/anaconda3/bin/../lib/gcc/x86_64-conda_cos6-linux-gnu/7.3.0/../../../../x86_64-conda_cos6-linux-gnu/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ef61a.dir/build.make:97: recipe for target 'cmTC_ef61a' failed
+make[1]: *** [cmTC_ef61a] Error 1
+make[1]: Leaving directory '/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_ef61a/fast' failed
+make: *** [cmTC_ef61a/fast] Error 2
+
+

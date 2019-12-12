@@ -1,0 +1,9 @@
+/home/ankit/Documents/object detection/darknet-master/libdark.so
+/home/ankit/Documents/object detection/darknet-master/include/darknet/darknet.h
+/home/ankit/Documents/object detection/darknet-master/include/darknet/yolo_v2_class.hpp
+/home/ankit/Documents/object detection/darknet-master/uselib
+/home/ankit/Documents/object detection/darknet-master/darknet
+/home/ankit/Documents/object detection/darknet-master/share/darknet/DarknetTargets.cmake
+/home/ankit/Documents/object detection/darknet-master/share/darknet/DarknetTargets-noconfig.cmake
+/home/ankit/Documents/object detection/darknet-master/share/darknet/DarknetConfig.cmake
+/home/ankit/Documents/object detection/darknet-master/share/darknet/DarknetConfigVersion.cmake

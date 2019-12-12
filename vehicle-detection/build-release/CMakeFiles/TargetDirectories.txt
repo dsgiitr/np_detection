@@ -1,0 +1,9 @@
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/install/strip.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/install/local.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/install.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/uselib.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/edit_cache.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/rebuild_cache.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/darknet.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/dark.dir
+/home/ankit/Documents/object detection/darknet-master/build-release/CMakeFiles/list_install_components.dir

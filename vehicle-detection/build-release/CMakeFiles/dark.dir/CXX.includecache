@@ -1,0 +1,512 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../3rdparty/stb/include/stb_image.h
+stb_image.h
+../3rdparty/stb/include/stb_image.h
+stdio.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+string.h
+-
+limits.h
+-
+math.h
+-
+stdio.h
+-
+assert.h
+-
+stdint.h
+-
+emmintrin.h
+-
+intrin.h
+-
+arm_neon.h
+-
+
+../include/darknet.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+stdint.h
+-
+assert.h
+-
+pthread.h
+-
+cuda_runtime.h
+-
+curand.h
+-
+cublas_v2.h
+-
+cudnn.h
+-
+
+../include/yolo_v2_class.hpp
+memory
+-
+vector
+-
+deque
+-
+algorithm
+-
+chrono
+-
+string
+-
+sstream
+-
+iostream
+-
+cmath
+-
+opencv2/opencv.hpp
+-
+opencv2/highgui/highgui_c.h
+-
+opencv2/imgproc/imgproc_c.h
+-
+opencv2/cudaoptflow.hpp
+-
+opencv2/cudaimgproc.hpp
+-
+opencv2/cudaarithm.hpp
+-
+opencv2/core/cuda.hpp
+-
+opencv2/video/tracking.hpp
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/activations.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+dark_cuda.h
+/home/ankit/Documents/object detection/darknet-master/src/dark_cuda.h
+math.h
+/home/ankit/Documents/object detection/darknet-master/src/math.h
+
+/home/ankit/Documents/object detection/darknet-master/src/box.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+
+/home/ankit/Documents/object detection/darknet-master/src/cost_layer.h
+layer.h
+/home/ankit/Documents/object detection/darknet-master/src/layer.h
+network.h
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+
+/home/ankit/Documents/object detection/darknet-master/src/dark_cuda.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+cuda.h
+-
+cuda_runtime.h
+-
+curand.h
+-
+cublas_v2.h
+-
+cuda_runtime_api.h
+-
+cudnn.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/darkunistd.h
+winsock2.h
+-
+direct.h
+-
+getopt.h
+/home/ankit/Documents/object detection/darknet-master/src/getopt.h
+io.h
+-
+process.h
+-
+stdlib.h
+-
+unistd.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/data.h
+pthread.h
+-
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+matrix.h
+/home/ankit/Documents/object detection/darknet-master/src/matrix.h
+list.h
+/home/ankit/Documents/object detection/darknet-master/src/list.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+tree.h
+/home/ankit/Documents/object detection/darknet-master/src/tree.h
+
+/home/ankit/Documents/object detection/darknet-master/src/demo.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+
+/home/ankit/Documents/object detection/darknet-master/src/detection_layer.h
+layer.h
+/home/ankit/Documents/object detection/darknet-master/src/layer.h
+network.h
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+
+/home/ankit/Documents/object detection/darknet-master/src/getopt.h
+crtdefs.h
+-
+errno.h
+-
+stdarg.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+windows.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/gettimeofday.h
+windows.h
+-
+winsock2.h
+-
+stdint.h
+-
+time.h
+-
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+
+/home/ankit/Documents/object detection/darknet-master/src/http_stream.cpp
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+http_stream.h
+/home/ankit/Documents/object detection/darknet-master/src/http_stream.h
+cstdio
+-
+vector
+-
+iostream
+-
+algorithm
+-
+memory
+-
+mutex
+-
+ctime
+-
+windows.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
+gettimeofday.h
+/home/ankit/Documents/object detection/darknet-master/src/gettimeofday.h
+darkunistd.h
+/home/ankit/Documents/object detection/darknet-master/src/darkunistd.h
+fcntl.h
+-
+sys/time.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netdb.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+signal.h
+-
+opencv2/opencv.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/highgui/highgui_c.h
+-
+opencv2/imgproc/imgproc_c.h
+-
+opencv2/videoio/videoio.hpp
+-
+httplib.h
+/home/ankit/Documents/object detection/darknet-master/src/httplib.h
+chrono
+-
+iostream
+-
+iostream
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/http_stream.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+stdint.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/httplib.h
+io.h
+-
+winsock2.h
+-
+ws2tcpip.h
+-
+arpa/inet.h
+-
+cstring
+-
+netdb.h
+-
+netinet/in.h
+-
+poll.h
+-
+pthread.h
+-
+csignal
+-
+sys/select.h
+-
+sys/socket.h
+-
+unistd.h
+-
+array
+-
+atomic
+-
+cassert
+-
+condition_variable
+-
+errno.h
+-
+fcntl.h
+-
+fstream
+-
+functional
+-
+list
+-
+map
+-
+memory
+-
+mutex
+-
+random
+-
+regex
+-
+string
+-
+sys/stat.h
+-
+thread
+-
+openssl/err.h
+-
+openssl/ssl.h
+-
+openssl/x509v3.h
+-
+openssl/crypto.h
+-
+zlib.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+stdlib.h
+-
+stdio.h
+-
+float.h
+-
+string.h
+-
+math.h
+-
+image_opencv.h
+/home/ankit/Documents/object detection/darknet-master/src/image_opencv.h
+box.h
+/home/ankit/Documents/object detection/darknet-master/src/box.h
+
+/home/ankit/Documents/object detection/darknet-master/src/image_opencv.cpp
+image_opencv.h
+/home/ankit/Documents/object detection/darknet-master/src/image_opencv.h
+utils.h
+/home/ankit/Documents/object detection/darknet-master/src/utils.h
+cstdio
+-
+cstdlib
+-
+cmath
+-
+string
+-
+vector
+-
+iostream
+-
+fstream
+-
+algorithm
+-
+opencv2/core/version.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+opencv2/opencv.hpp
+-
+opencv2/opencv_modules.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/video/video.hpp
+-
+opencv2/core/types.hpp
+-
+opencv2/videoio/videoio.hpp
+-
+opencv2/imgcodecs/imgcodecs.hpp
+-
+opencv2/highgui/highgui_c.h
+-
+opencv2/imgproc/imgproc_c.h
+-
+opencv2/core/types_c.h
+-
+opencv2/core/version.hpp
+-
+http_stream.h
+/home/ankit/Documents/object detection/darknet-master/src/http_stream.h
+
+/home/ankit/Documents/object detection/darknet-master/src/image_opencv.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+matrix.h
+/home/ankit/Documents/object detection/darknet-master/src/matrix.h
+
+/home/ankit/Documents/object detection/darknet-master/src/layer.h
+activations.h
+/home/ankit/Documents/object detection/darknet-master/src/activations.h
+stddef.h
+/home/ankit/Documents/object detection/darknet-master/src/stddef.h
+tree.h
+/home/ankit/Documents/object detection/darknet-master/src/tree.h
+
+/home/ankit/Documents/object detection/darknet-master/src/list.h
+
+/home/ankit/Documents/object detection/darknet-master/src/matrix.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+stdint.h
+-
+layer.h
+/home/ankit/Documents/object detection/darknet-master/src/layer.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+data.h
+/home/ankit/Documents/object detection/darknet-master/src/data.h
+tree.h
+/home/ankit/Documents/object detection/darknet-master/src/tree.h
+
+/home/ankit/Documents/object detection/darknet-master/src/option_list.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+list.h
+/home/ankit/Documents/object detection/darknet-master/src/list.h
+
+/home/ankit/Documents/object detection/darknet-master/src/parser.h
+network.h
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+
+/home/ankit/Documents/object detection/darknet-master/src/region_layer.h
+layer.h
+/home/ankit/Documents/object detection/darknet-master/src/layer.h
+network.h
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+
+/home/ankit/Documents/object detection/darknet-master/src/tree.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+
+/home/ankit/Documents/object detection/darknet-master/src/utils.h
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+list.h
+/home/ankit/Documents/object detection/darknet-master/src/list.h
+stdio.h
+-
+time.h
+-
+
+/home/ankit/Documents/object detection/darknet-master/src/yolo_v2_class.cpp
+darknet.h
+/home/ankit/Documents/object detection/darknet-master/src/darknet.h
+yolo_v2_class.hpp
+/home/ankit/Documents/object detection/darknet-master/src/yolo_v2_class.hpp
+network.h
+/home/ankit/Documents/object detection/darknet-master/src/network.h
+detection_layer.h
+/home/ankit/Documents/object detection/darknet-master/src/detection_layer.h
+region_layer.h
+/home/ankit/Documents/object detection/darknet-master/src/region_layer.h
+cost_layer.h
+/home/ankit/Documents/object detection/darknet-master/src/cost_layer.h
+utils.h
+/home/ankit/Documents/object detection/darknet-master/src/utils.h
+parser.h
+/home/ankit/Documents/object detection/darknet-master/src/parser.h
+box.h
+/home/ankit/Documents/object detection/darknet-master/src/box.h
+image.h
+/home/ankit/Documents/object detection/darknet-master/src/image.h
+demo.h
+/home/ankit/Documents/object detection/darknet-master/src/demo.h
+option_list.h
+/home/ankit/Documents/object detection/darknet-master/src/option_list.h
+stb_image.h
+/home/ankit/Documents/object detection/darknet-master/src/stb_image.h
+vector
+-
+iostream
+-
+algorithm
+-
+cmath
+-
+

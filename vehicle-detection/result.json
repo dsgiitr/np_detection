@@ -1,0 +1,33 @@
+[
+{
+ "frame_id":1, 
+ "filename":"data/test1.jpg", 
+ "objects": [ 
+  {"class_id":7, "name":"truck", "relative_coordinates":{"center_x":0.506945, "center_y":0.563417, "width":0.730549, "height":0.889793}, "confidence":0.987690}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.594047, "center_y":0.095883, "width":0.075763, "height":0.186385}, "confidence":0.921762}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.513710, "center_y":0.088459, "width":0.072396, "height":0.134095}, "confidence":0.865408}
+ ] 
+}, 
+{
+ "frame_id":2, 
+ "filename":"data/test2.jpg", 
+ "objects": [ 
+  {"class_id":3, "name":"motorbike", "relative_coordinates":{"center_x":0.814877, "center_y":0.663433, "width":0.345159, "height":0.656513}, "confidence":0.996727}, 
+  {"class_id":3, "name":"motorbike", "relative_coordinates":{"center_x":0.330082, "center_y":0.449791, "width":0.182574, "height":0.370261}, "confidence":0.863519}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.792430, "center_y":0.432299, "width":0.366767, "height":0.750721}, "confidence":0.999835}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.320458, "center_y":0.333563, "width":0.201860, "height":0.549306}, "confidence":0.999236}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.452494, "center_y":0.172453, "width":0.045718, "height":0.173373}, "confidence":0.991691}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.517120, "center_y":0.164164, "width":0.049972, "height":0.181292}, "confidence":0.975528}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.047211, "center_y":0.250056, "width":0.060203, "height":0.220901}, "confidence":0.947779}, 
+  {"class_id":0, "name":"person", "relative_coordinates":{"center_x":0.084715, "center_y":0.222575, "width":0.082381, "height":0.285541}, "confidence":0.864271}
+ ] 
+}, 
+{
+ "frame_id":3, 
+ "filename":"data/test3.jpg", 
+ "objects": [ 
+  {"class_id":2, "name":"car", "relative_coordinates":{"center_x":0.135193, "center_y":0.554129, "width":0.236540, "height":0.373927}, "confidence":0.984018}, 
+  {"class_id":2, "name":"car", "relative_coordinates":{"center_x":0.494424, "center_y":0.624124, "width":0.671563, "height":0.690804}, "confidence":0.805233}
+ ] 
+}
+]
