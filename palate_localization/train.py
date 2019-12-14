@@ -302,7 +302,7 @@ sample=next(iter(dataloader))
 
 print(sample.get("labels"))
 
-num_epochs=200
+num_epochs=110
 total_step = len(dataloader)
 loss_list = []
 acc_list = []
@@ -337,4 +337,4 @@ from sklearn.externals import joblib
 # Save the model as a pickle in a file 
 joblib.dump(model, 'model.pkl')
 
-torch.save(model.state_dict(),"photos")
+torch.save(model.state_dict(),"model.pth")
