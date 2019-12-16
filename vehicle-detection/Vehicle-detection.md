@@ -17,10 +17,11 @@ during that time it automatically takes input from the data/train.txt
 ### What it exactly does
 
 ```
-It takes images from the location specified in /data/train.txt file
-and run yolo object detector to find vehicles (car, truck, bus, motorbike)
+It takes video named "project_video.mp4" in current directory takes screenshots from it and saves it in images format in data/ folder and make /data/train.txt file.
+Then run yolo object detector to find vehicles (car, truck, bus, motorbike)
 it saves output in "result.json", which is again read by final.py and presented in well understood format.
 Also during the processing the images with bounding boxes and labels, can be seen in "prediction.jpg" which are constantly updated.
+All the vehicle output are saved in output/ folder in image format.
 ```
 ### Problems
 If this error shows up
