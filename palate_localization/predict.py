@@ -119,25 +119,27 @@ model.load_state_dict(torch.load("model.pth"))
 
 import pandas as pd
 import glob
-names=(glob.glob("sample/*jpg"))
+names=(glob.glob("../vehicle-detection/output/*jpg"))
 
 import cv2
 
 # Save image in set directory 
 # Read RGB image 
-
+import os
 
 for i,name in enumerate(names):
-    print(name)
     image = cv2.imread(name,1)
     print("image being processed")
     print(name)
+    os.chdir("../vehicle-detection")
+    os.chdir("../predictCharacter")
+    print(image.dtype)
     trans=transforms.ToPILImage()
     trans1=transforms.ToTensor()
     img= torch.from_numpy(np.array(image))
     data=img.reshape([1,3,1160,720])
     with torch.no_grad():
-     	landmarks=model(data.float())
+        landmarks=model(data.float())
     landmarks=np.array(landmarks)
     print("predicted values")
 
@@ -145,9 +147,10 @@ for i,name in enumerate(names):
     crop_img=image[int(landmarks[0,1]-10):int(landmarks[0,3]+10), int(landmarks[0,0]-10):int(landmarks[0,2]+10),]
     im = Image.fromarray(crop_img)
     
-    s="prediction/"+name
+    s='../predictCharacter/output/frame-1.jpg'
     im.save(s)
+    os.system("python PredictCharacters.py")
     print("image processing was successfull")
 
-	
+    
 
