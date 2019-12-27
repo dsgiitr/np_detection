@@ -121,3 +121,7 @@ This work is in the very elementry stage and we'd like to improve upon the follo
 Any kind of enhancement or contribution is welcomed.
 
 # Acknowledgement
+* [Image Object Localization](https://github.com/ckczzj/Image-Object-Localization)
+* [yolo object detector in pytorch](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
+* [Object detection and tracking in pytorch](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98)
+* [detcect Recog CCPD](https://github.com/detectRecog/CCPD) for dataset
