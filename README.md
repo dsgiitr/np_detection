@@ -120,8 +120,21 @@ This work is in the very elementry stage and we'd like to improve upon the follo
 # Contributing
 Any kind of enhancement or contribution is welcomed.
 
-# Acknowledgement
+# Resources
 * [Image Object Localization](https://github.com/ckczzj/Image-Object-Localization)
-* [yolo object detector in pytorch](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
-* [Object detection and tracking in pytorch](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98)
-* [detcect Recog CCPD](https://github.com/detectRecog/CCPD) for dataset
+* [YOLO](https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/)
+* [Object Detection & Tracking in PyTorch](https://towardsdatascience.com/object-detection-and-tracking-in-pytorch-b3cf1a696a98)
+
+# Citation
+
+This project is heavily inspired from the paper, *Towards End-to-End License Plate Detection and Recognition: A Large Dataset and Baseline* and we use the dataset introduced by Xu et al.
+
+```
+@inproceedings{xu2018towards,
+  title={Towards End-to-End License Plate Detection and Recognition: A Large Dataset and Baseline},
+  author={Xu, Zhenbo and Yang, Wei and Meng, Ajin and Lu, Nanxue and Huang, Huan},
+  booktitle={Proceedings of the European Conference on Computer Vision (ECCV)},
+  pages={255--271},
+  year={2018}
+}
+```
