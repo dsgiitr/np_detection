@@ -1,29 +1,37 @@
 # Number Plate Detection System
-Number Plate Detection has been made for the purpose of security purposes. This System tracks an ongoing car and separates the number plate from the car and save its digits. This system has been implemented with number of approaches and ways. In this repo we are using YOLONet, Convolutional Networks and OCR(from openCV ) to implement this system.
+
+This project aims to detect vehicles entering the campus of IIT Roorkee, recording the Number Plates for security purposes. The system tracks the vehicle and separates the number plate from the automobile and outputs the digits. This system has been implemented with a number of approaches and a lot of work is still needed to refine the whole pipeline. In this repo we are using Deep Learning techniques like YOLO for object detection and have also implemented OCR (using openCV).
 
 # Requirements
-- [PyTorch](https://pytorch.org/) (An open source deep learning platform) 
-- [OpenCV](https://opencv.org/) ( a highly optimized library with focus on real-time applications.)
+- [PyTorch](https://pytorch.org/) 
+- [OpenCV](https://opencv.org/)
 
 # Sample Frames being Processed For Output
 ![gif](photos/frames.gif)
 
 # In a Nutshell
-In a nutshell here is how we have implemented this project
-- In `vehicle-detection` folder there is a file `final.py` on extecuting this file the video taken as input is converted into snapshots and `YoloNet` detects the vehicles from the frame.The Frame with vehicles in the output are are saved in the folder `vehicle-detection/output`
+In a nutshell here is how this project works
+- In the directory `vehicle-detection`, on executing `final.py` with the video taken as an input, it is converted into snapshots,  which is followed by Object Detection using `YoloNet` which outputs the bounding boxes for the vehicles from these frames. The frame with the vehicle in the output are are saved in the directory `vehicle-detection/output`.
 
-#### To run vehicle detector open terminal in the directory
+#### Steps to Run
+
+Clone the repository:
+```sh
+git clone https://github.com/dsgiitr/np_detection.git
+```
 
 Run the command:
 ```sh
 python final.py
 ```
+
 #### The sample snapshot of detected Vehicle Can be seen below
 <img src="photos/vehicle.jpg" width="300" height="500" />
 
-- In `palate_localization` folder we have implemented the Convolutional Neural Network For Palate LocaliZation. The trained model has been saved as `model.pth` file.To train the model again place the data in `palate_localization/photos` folder.
-The train data can be found from the link below:
-### The google drive link for directly downloading the whole dataset: [google drive 12GB](https://drive.google.com/open?id=1fFqCXjhk7vE9yLklpJurEwP9vdLZmrJd). 
+- In the `palate_localization` directory we used a CNN For Palate Localization. The trained model has been saved as `model.pth` and can be accessed in the directory. 
+
+The dataset can be found from this google drive link for directly downloading the whole dataset: [Dataset 12GB](https://drive.google.com/open?id=1fFqCXjhk7vE9yLklpJurEwP9vdLZmrJd). To train the model again, place the data in `palate_localization/photos` folder.
+
 #### Dataset Annotations
 
 Annotations are embedded in file name.
@@ -51,12 +59,13 @@ ads = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q'
 
 - **Blurriness**: The Blurriness of the license plate region.
 
-#### open terminal in directory and run the command after placing the train data to train network again
+#### Execute the command after placing the train data to start training
 
 ```sh
 python train.py
 ```
-The Model used can bee seen ih the file `model.py`.
+
+The Model used can bee seen in the file `model.py`.
 ```python
         self.features = nn.Sequential(
             hidden1,
@@ -85,18 +94,30 @@ python predict.py
 #### The sample of the localized plate can be seen below:
 ![sample](photos/sample.jpg)
 
-- In the `predictCharacter` folder we have implemented the character predictor from scratch using `OpenCv`.To run the character predictor place the sample in the folder `predictorCharacter/output`  with the name `frame-1` and open terminal here and run the `PredictCharacters.py`.
+- In the `predictCharacter` directory we implement the character predictor from scratch using `OpenCv`. To run the character predictor place the sample in the directory `predictorCharacter/output`  with the name `frame-1` and open terminal here to run the `PredictCharacters.py`.
 
 #### The sample of output from the `predictCharacter` can be seen below
 ![sample](photos/sample.png)
 
-To run the entire project in one go run the file `initialize.py`
-#### Run the following command in terminal
+
+#### To run the entire project at once just run the file `initialize.py`
+
 ```sh
 python initialize.py
 ```
-Note: cuda is compulsory to run the above neural network
+
+Note: CUDA is compulsory to run the above network.
+
 # Future Work
-Trying to make the system autonomous on live video and increasing the accuracy of the Convolutional Neural Network.
+
+This work is in the very elementry stage and we'd like to improve upon the following:
+
+* Making the system autonomous on live videos and increasing the robustness of the system overall.
+* Deploying the same into production with a complete backend database.
+* Tackling more than one vehicle in the frame.
+* Tackling obstruction of Number Plate Detector with not so important text on the vehicle like the car name or any kind of text that the model may find in the frame and output instead of the number plate.
+
 # Contributing
 Any kind of enhancement or contribution is welcomed.
+
+# Acknowledgement
