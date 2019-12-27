@@ -19,12 +19,12 @@ Run the command:
 python final.py
 ```
 #### The sample snapshot of detected Vehicle Can be seen below
-![Vehicle](photos/vehicle.jpg)
+<img src="photos/vehicle.jpg" width="300" height="500" />
 
 - In `palate_localization` folder we have implemented the Convolutional Neural Network For Palate LocaliZation. The trained model has been saved as `model.pth` file.To train the model again place the data in `palate_localization/photos` folder.
 The train data can be found from the link below:
 ### The google drive link for directly downloading the whole dataset: [google drive 12GB](https://drive.google.com/open?id=1fFqCXjhk7vE9yLklpJurEwP9vdLZmrJd). 
-## Dataset Annotations
+#### Dataset Annotations
 
 Annotations are embedded in file name.
 
